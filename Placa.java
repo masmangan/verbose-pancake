@@ -5,7 +5,7 @@ public class Placa{
     private String codigo; // LLLNLNN
 
     public Placa(String pais,String codigo){
-        this.pais = pais;
+        setPais(pais);//this.pais = pais;
         if (Pattern.matches("[A-Z]{3}[0-9][A-Z][0-9]{2}", codigo) == true){
             this.codigo = codigo;
         }else{
@@ -14,6 +14,7 @@ public class Placa{
     }
 
     public void setPais(String pais){
+        pais = pais.toUpperCase();
         this.pais = pais;
     }
 
