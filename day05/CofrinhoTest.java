@@ -38,12 +38,21 @@ public class CofrinhoTest {
         System.out.println(c1.getQtdadeMoedas());
 
         System.out.println(c1.getQtdadeMoedasTipo(NomeMoeda.Dez));
+        System.out.println(c1.getValorTotalCentavos());
+        System.out.println(c1.getValorTotalReais());
+
         c1.insere(new Moeda(NomeMoeda.Dez));
         System.out.println(c1.getQtdadeMoedasTipo(NomeMoeda.Dez));
+        System.out.println(c1.getValorTotalCentavos());
+        System.out.println(c1.getValorTotalReais());
         c1.insere(new Moeda(NomeMoeda.Dez));
         System.out.println(c1.getQtdadeMoedasTipo(NomeMoeda.Dez));
+        System.out.println(c1.getValorTotalCentavos());
+        System.out.println(c1.getValorTotalReais());
         c1.insere(new Moeda(NomeMoeda.Dez));
         System.out.println(c1.getQtdadeMoedasTipo(NomeMoeda.Dez));
+        System.out.println(c1.getValorTotalCentavos());
+        System.out.println(c1.getValorTotalReais());
 
     }
 }

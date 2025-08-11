@@ -68,7 +68,7 @@ public class Cofrinho {
     }
 
     /**
-     * Informa quantas moedas de um certo tipo estão 
+     * Informa quantas moedas de um certo tipo estão
      * guardadas no cofrinho.
      * 
      * @param nomeMoeda
@@ -76,17 +76,28 @@ public class Cofrinho {
      */
     public int getQtdadeMoedasTipo(NomeMoeda nomeMoeda) {
         int c = 0;
-        //for (int i = 0; i < tamanho; i++) {
-        //    if (nomeMoeda == moedas[i].getNomeMoeda()) {
-        //        c = c + 1;
-        //    }
-        //}
-        for (Moeda m : moedas) {
-            if (nomeMoeda == m.getNomeMoeda()) {
+        for (int i = 0; i < tamanho; i++) {
+            if (nomeMoeda == moedas[i].getNomeMoeda()) {
                 c = c + 1;
             }
         }
         return c;
+    }
+
+    public int getValorTotalCentavos() {
+        int total = 0;
+        for (int i = 0; i < tamanho; i++) {
+            total = total + moedas[i].getValorCentavos();
+        }
+        return total;
+    }
+
+    public double getValorTotalReais() {
+        double total = 0;
+        for (int i = 0; i < tamanho; i++) {
+            total += moedas[i].getValorReais();
+        }
+        return total;
     }
 
     /**
