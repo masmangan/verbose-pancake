@@ -22,7 +22,7 @@ public class App {
             return;
         }
 
-        Placa p1 = new Placa("brasil", placa);
+        Placa2 p1 = new Placa2("brasil", placa);
 
         Veiculo v = new Veiculo(p1);
         System.out.println("Dados do veiculo antes de abastecer:");

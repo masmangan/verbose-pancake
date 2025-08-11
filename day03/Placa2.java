@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
  * @author julioapm@pucrs.br
  * @author marco.mangan@pucrs.br
  */
-public class Placa{
+public class Placa2{
     private String pais;
     private String codigo; // LLLNLNN
 
@@ -18,7 +18,7 @@ public class Placa{
      * @param pais não pode ser null!
      * @param codigo tem que respeitar o formato!
      */
-    public Placa(String pais,String codigo){
+    public Placa2(String pais,String codigo){
         setPais(pais);
         if (Pattern.matches("[A-Z]{3}[0-9][A-Z][0-9]{2}", codigo) == true){
             this.codigo = codigo;

@@ -1,9 +1,9 @@
 public class Veiculo{
     private final double consumoPorLitro = 10;
-    private Placa placa;
+    private Placa2 placa;
     private double combustivel;
     
-    public Veiculo(Placa placa){
+    public Veiculo(Placa2 placa){
         this.placa = placa;
         combustivel = 0;
     }
@@ -12,7 +12,7 @@ public class Veiculo{
         placa.setPais(pais);
     }
 
-    public Placa getPlaca(){
+    public Placa2 getPlaca(){
         return placa;
     }
 
