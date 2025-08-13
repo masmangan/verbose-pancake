@@ -3,4 +3,8 @@ class Cofrinho
 class CofrinhoTest
 class NomeMoeda
 class Moeda
+
+Cofrinho ..> Moeda
+Moeda ..> NomeMoeda
+CofrinhoTest ..> Cofrinho
 @enduml
