@@ -1,7 +1,7 @@
 @startuml
 class Cofrinho
 class CofrinhoTest
-class NomeMoeda
+enum NomeMoeda
 class Moeda
 
 Cofrinho ..> Moeda
