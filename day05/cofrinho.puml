@@ -1,0 +1,10 @@
+@startuml
+class Cofrinho
+class CofrinhoTest
+enum NomeMoeda
+class Moeda
+
+Cofrinho ..> Moeda
+Moeda ..> NomeMoeda
+CofrinhoTest ..> Cofrinho
+@enduml
