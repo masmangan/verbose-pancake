@@ -13,7 +13,8 @@ public class Farm {
         //System.out.println(r1.talk());
         //System.out.println(a1.talk());
 
-        Animal[] as = {new Cow(), new Pig(), new Chicken()}
+        Animal[] as = {new Cow(), new Pig(), new Chicken()};
+        
         for (Animal a : as) {
             System.out.println(a.talk());    
         }
